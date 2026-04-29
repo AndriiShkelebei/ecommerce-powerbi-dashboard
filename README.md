@@ -2,13 +2,15 @@
 
 ## 🔍 Overview
 
-This project analyzes a real-world e-commerce dataset (Olist) using SQL and Power BI.
+This project analyzes a real-world e-commerce dataset (Olist) using **SQL and Power BI**.
 
-The goal was to simulate a real data analyst workflow:
+It simulates a real data analyst workflow:
 
-* prepare and transform data using SQL
-* build an analytical dataset
-* create an interactive dashboard for business insights
+* data extraction and transformation in SQL
+* creation of an analysis-ready dataset
+* development of an interactive dashboard for business insights
+
+This project complements a separate Excel-based analysis, demonstrating multiple approaches to the same dataset.
 
 ---
 
@@ -25,8 +27,8 @@ The goal was to simulate a real data analyst workflow:
 ## 🛠 Tools & Technologies
 
 * **PostgreSQL** — data preparation
-* **SQL** — data transformation & aggregation
-* **Power BI** — data visualization & dashboarding
+* **SQL (CTE, JOINs, aggregations)** — data transformation
+* **Power BI** — data visualization and dashboarding
 
 ---
 
@@ -34,7 +36,7 @@ The goal was to simulate a real data analyst workflow:
 
 Two analytical tables were created:
 
-### 1. `analysis_table`
+### `analysis_table`
 
 Main dataset used for KPIs and trend analysis:
 
@@ -44,14 +46,14 @@ Main dataset used for KPIs and trend analysis:
 * delivery_status (On Time / Delayed)
 * order_month
 
-### 2. `category_analysis_table`
+### `category_analysis_table`
 
 Used for category-level analysis:
 
 * revenue by product category
 * supports Top 10 categories visualization
 
-The data was transformed using joins, aggregations, and CTEs to create a flat structure optimized for BI.
+Data was transformed using joins, aggregations, and CTEs to create a flat structure optimized for BI reporting.
 
 ---
 
@@ -70,7 +72,7 @@ The data was transformed using joins, aggregations, and CTEs to create a flat st
 
 * **Customer Satisfaction**
 
-  * Comparison of review scores:
+  * Review score comparison:
 
     * On Time vs Delayed deliveries
 
@@ -84,22 +86,31 @@ The data was transformed using joins, aggregations, and CTEs to create a flat st
 
 * **Custom Tooltip**
 
-  * Displays additional metrics on hover
+  * Displays additional metrics on hover (mini-dashboard experience)
 
 ---
 
-## 💡 Key Insights
+## 📊 Key Insights
 
-* Revenue shows steady growth with peaks in late 2017
-* A small number of categories drive a large portion of revenue (Pareto effect)
-* Delayed deliveries significantly reduce customer satisfaction
-* Most customers make only one purchase (low retention)
+* Revenue shows consistent growth with peaks in late 2017
+* A small number of categories generate the majority of revenue (Pareto effect)
+* Delivery delays significantly reduce customer satisfaction
+* Customer retention is very low — most users make only one purchase
+
+---
+
+## 💡 Recommendations
+
+* Improve delivery performance to increase customer satisfaction
+* Implement retention strategies (loyalty programs, remarketing)
+* Focus on high-performing categories for growth
+* Monitor underperforming sellers
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text id="e7l4ap"
 ecommerce-powerbi-dashboard/
 ├── ecommerce_dashboard.pbix
 ├── README.md
@@ -121,11 +132,17 @@ ecommerce-powerbi-dashboard/
 
 1. Open `ecommerce_dashboard.pbix` in Power BI Desktop
 2. Connect to your PostgreSQL database (or use imported data)
-3. Interact with slicers and visuals
+3. Interact with slicers, filters, and tooltips
 
 ---
 
-## 📬 Author
+## 📌 Notes
+
+This project demonstrates a full analytics workflow: from SQL data modeling to interactive BI dashboard development.
+
+---
+
+## 👤 Author
 
 Andrii Shkelebei
-Aspiring Data Analyst focused on SQL and Business Intelligence
+Aspiring Data Analyst focused on SQL, Power BI, and Business Intelligence
