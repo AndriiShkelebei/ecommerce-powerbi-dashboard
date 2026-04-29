@@ -1,38 +1,38 @@
-# 📊 E-commerce Performance Dashboard (SQL + Power BI)
+#  E-commerce Performance Dashboard (SQL + Power BI)
 
-## 🔍 Overview
+##  Overview
 
 This project analyzes a real-world e-commerce dataset (Olist) using **SQL and Power BI**.
 
 It simulates a real data analyst workflow:
 
-* data extraction and transformation in SQL
-* creation of an analysis-ready dataset
-* development of an interactive dashboard for business insights
+ data extraction and transformation in SQL
+ creation of an analysis-ready dataset
+ development of an interactive dashboard for business insights
 
 This project complements a separate Excel-based analysis, demonstrating multiple approaches to the same dataset.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
-* Analyze overall business performance
-* Track revenue trends over time
-* Evaluate customer behavior
-* Identify top-performing product categories
-* Understand how delivery impacts customer satisfaction
+ Analyze overall business performance
+ Track revenue trends over time
+ Evaluate customer behavior
+ Identify top-performing product categories
+ Understand how delivery impacts customer satisfaction
 
 ---
 
 ## 🛠 Tools & Technologies
 
-* **PostgreSQL** — data preparation
-* **SQL (CTE, JOINs, aggregations)** — data transformation
-* **Power BI** — data visualization and dashboarding
+ **PostgreSQL** — data preparation
+ **SQL (CTE, JOINs, aggregations)** — data transformation
+ **Power BI** — data visualization and dashboarding
 
 ---
 
-## 🧱 Data Preparation (SQL)
+##  Data Preparation (SQL)
 
 Two analytical tables were created:
 
@@ -40,66 +40,66 @@ Two analytical tables were created:
 
 Main dataset used for KPIs and trend analysis:
 
-* revenue (aggregated from order_items)
-* payment_value
-* review_score (average)
-* delivery_status (On Time / Delayed)
-* order_month
+ revenue (aggregated from order_items)
+ payment_value
+ review_score (average)
+ delivery_status (On Time / Delayed)
+ order_month
 
 ### `category_analysis_table`
 
 Used for category-level analysis:
 
-* revenue by product category
-* supports Top 10 categories visualization
+ revenue by product category
+ supports Top 10 categories visualization
 
 Data was transformed using joins, aggregations, and CTEs to create a flat structure optimized for BI reporting.
 
 ---
 
-## 📈 Dashboard Features
+##  Dashboard Features
 
 * **KPI Cards**
 
-  * Total Revenue
-  * Total Orders
-  * Total Customers
-  * Average Order Value (AOV)
+   Total Revenue
+   Total Orders
+   Total Customers
+   Average Order Value (AOV)
 
 * **Revenue Trend**
 
-  * Monthly revenue growth
+   Monthly revenue growth
 
 * **Customer Satisfaction**
 
-  * Review score comparison:
+   Review score comparison:
 
-    * On Time vs Delayed deliveries
+     On Time vs Delayed deliveries
 
 * **Top 10 Categories**
 
-  * Revenue distribution by category
+   Revenue distribution by category
 
 * **Interactive Slicer**
 
-  * Filter data by month
+   Filter data by month
 
 * **Custom Tooltip**
 
-  * Displays additional metrics on hover (mini-dashboard experience)
+   Displays additional metrics on hover (mini-dashboard experience)
 
 ---
 
-## 📊 Key Insights
+##  Key Insights
 
-* Revenue shows consistent growth with peaks in late 2017
-* A small number of categories generate the majority of revenue (Pareto effect)
-* Delivery delays significantly reduce customer satisfaction
-* Customer retention is very low — most users make only one purchase
+ Revenue shows consistent growth with peaks in late 2017
+ A small number of categories generate the majority of revenue (Pareto effect)
+ Delivery delays significantly reduce customer satisfaction
+ Customer retention is very low — most users make only one purchase
 
 ---
 
-## 💡 Recommendations
+##  Recommendations
 
 * Improve delivery performance to increase customer satisfaction
 * Implement retention strategies (loyalty programs, remarketing)
@@ -108,7 +108,7 @@ Data was transformed using joins, aggregations, and CTEs to create a flat struct
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text id="e7l4ap"
 ecommerce-powerbi-dashboard/
@@ -122,13 +122,13 @@ ecommerce-powerbi-dashboard/
 
 ---
 
-## 🖼 Dashboard Preview
+##  Dashboard Preview
 
 ![Dashboard](screenshots/dashboard.png)
 
 ---
 
-## 🚀 How to Use
+##  How to Use
 
 1. Open `ecommerce_dashboard.pbix` in Power BI Desktop
 2. Connect to your PostgreSQL database (or use imported data)
@@ -136,13 +136,13 @@ ecommerce-powerbi-dashboard/
 
 ---
 
-## 📌 Notes
+##  Notes
 
 This project demonstrates a full analytics workflow: from SQL data modeling to interactive BI dashboard development.
 
 ---
 
-## 👤 Author
+##  Author
 
 Andrii Shkelebei
 Aspiring Data Analyst focused on SQL, Power BI, and Business Intelligence
