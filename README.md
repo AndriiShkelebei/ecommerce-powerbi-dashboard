@@ -24,7 +24,7 @@ This project complements a separate Excel-based analysis, demonstrating multiple
 
 ---
 
-## 🛠 Tools & Technologies
+##  Tools & Technologies
 
  **PostgreSQL** — data preparation
  **SQL (CTE, JOINs, aggregations)** — data transformation
@@ -59,32 +59,32 @@ Data was transformed using joins, aggregations, and CTEs to create a flat struct
 
 ##  Dashboard Features
 
-* **KPI Cards**
+ **KPI Cards**
 
    Total Revenue
    Total Orders
    Total Customers
    Average Order Value (AOV)
 
-* **Revenue Trend**
+ **Revenue Trend**
 
    Monthly revenue growth
 
-* **Customer Satisfaction**
+ **Customer Satisfaction**
 
    Review score comparison:
 
      On Time vs Delayed deliveries
 
-* **Top 10 Categories**
+ **Top 10 Categories**
 
    Revenue distribution by category
 
-* **Interactive Slicer**
+ **Interactive Slicer**
 
    Filter data by month
 
-* **Custom Tooltip**
+ **Custom Tooltip**
 
    Displays additional metrics on hover (mini-dashboard experience)
 
@@ -101,10 +101,10 @@ Data was transformed using joins, aggregations, and CTEs to create a flat struct
 
 ##  Recommendations
 
-* Improve delivery performance to increase customer satisfaction
-* Implement retention strategies (loyalty programs, remarketing)
-* Focus on high-performing categories for growth
-* Monitor underperforming sellers
+ Improve delivery performance to increase customer satisfaction
+ Implement retention strategies (loyalty programs, remarketing)
+ Focus on high-performing categories for growth
+ Monitor underperforming sellers
 
 ---
 
