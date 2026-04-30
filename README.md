@@ -12,8 +12,7 @@ The focus is on understanding why customer retention is low and how delivery per
  Customer retention is very low (~3%)
  Delayed deliveries account for ~8% of orders
  Average review score:
-   On-time delivery: ~4.2
-   Delayed delivery: ~2.6
+   On-time delivery: ~4.2 Delayed delivery: ~2.6
  Revenue grew rapidly in 2017 and stabilized in 2018 (~$1M/month)
 
 Conclusion: delivery delays are strongly associated with lower customer satisfaction and likely contribute to low retention.
