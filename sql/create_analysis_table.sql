@@ -1,5 +1,6 @@
 -- =========================================
 -- Data preparation for Power BI Dashboard
+-- Dataset: Brazilian E-Commerce Public Dataset by Olist
 -- Dataset: Olist E-commerce
 -- =========================================
 
