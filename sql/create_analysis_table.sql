@@ -6,7 +6,6 @@
 -- =========================================
 -- MAIN ANALYSIS TABLE
 -- =========================================
-CREATE TABLE analysis_table AS
 WITH order_revenue AS (
     SELECT 
         order_id,
