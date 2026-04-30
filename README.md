@@ -9,7 +9,12 @@ The focus is on understanding why customer retention is low and how delivery per
 
 ## Key Findings
 
-Customer retention is very low (~3%) Delayed deliveries account for ~8% of orders Average review score: On-time delivery: ~4.2 Delayed delivery: 2.6 Revenue grew rapidly in 2017 and stabilized in 2018 ($1M/month)
+Customer retention is very low (~3%) 
+Delayed deliveries account for ~8% of orders
+Average review score: 
+On-time delivery ~4.2
+Delayed delivery ~2.6 
+Revenue grew rapidly in 2017 and stabilized in 2018 ($1M/month)
 
 Conclusion: delivery delays are strongly associated with lower customer satisfaction and likely contribute to low retention.
 
@@ -36,9 +41,9 @@ The dashboard includes:
 Dataset: Olist Brazilian E-commerce Dataset (Kaggle)
 
 Scope adjustments:
-- Early low-volume months removed
-- Late incomplete months excluded  
-- Analysis period: Jan 2017 – Aug 2018
+ Early low-volume months removed
+ Late incomplete months excluded  
+ Analysis period: Jan 2017 – Aug 2018
 
 ---
 
