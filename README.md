@@ -72,7 +72,7 @@ Key calculations:
 
 ## Project Structure
 ```
-├──  screenshots/
+ ├──  screenshots/
  │   └── overview_dashboard.png
  ├──  sql/
  │   ├── 01_create_analysis_table.sql
