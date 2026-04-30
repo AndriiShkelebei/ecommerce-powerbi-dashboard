@@ -6,6 +6,8 @@
 -- =========================================
 -- MAIN ANALYSIS TABLE
 -- =========================================
+CREATE TABLE analysis_table AS
+
 WITH order_revenue AS (
     SELECT 
         order_id,
@@ -30,7 +32,6 @@ order_reviews_agg AS (
     GROUP BY order_id
 )
 
-CREATE TABLE analysis_table AS
 SELECT
     o.order_id,
     o.order_purchase_timestamp,
@@ -54,17 +55,10 @@ SELECT
 
 FROM orders o
 
-JOIN customers c 
-    ON o.customer_id = c.customer_id
-
-LEFT JOIN order_revenue r 
-    ON o.order_id = r.order_id
-
-LEFT JOIN order_payments_agg p 
-    ON o.order_id = p.order_id
-
-LEFT JOIN order_reviews_agg rv 
-    ON o.order_id = rv.order_id;
+JOIN customers c ON o.customer_id = c.customer_id
+LEFT JOIN order_revenue r ON o.order_id = r.order_id
+LEFT JOIN order_payments_agg p ON o.order_id = p.order_id
+LEFT JOIN order_reviews_agg rv ON o.order_id = rv.order_id;
 
 
 -- =========================================
@@ -75,19 +69,13 @@ CREATE TABLE category_analysis_table AS
 SELECT
     oi.order_id,
     DATE_TRUNC('month', o.order_purchase_timestamp) AS order_month,
-
     COALESCE(p.product_category_name, 'unknown') AS category,
-
     SUM(oi.price + oi.freight_value) AS revenue
-
 FROM order_items oi
-
 JOIN orders o 
     ON oi.order_id = o.order_id
-
 LEFT JOIN products p 
     ON oi.product_id = p.product_id
-
 GROUP BY
     oi.order_id,
     DATE_TRUNC('month', o.order_purchase_timestamp),
