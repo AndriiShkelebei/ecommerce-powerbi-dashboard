@@ -73,12 +73,12 @@ Focus on customer experience after delivery
 
 The dashboard includes:
 
-Revenue, Orders, Customers, AOV
-Revenue trend & growth %
-Returning customer rate
-Delivery delay rate
-Review score by delivery status
-Top product categories
+- Revenue, Orders, Customers, AOV
+- Revenue trend & growth %
+- Returning customer rate
+- Delivery delay rate
+- Review score by delivery status
+- Top product categories
 
 ---
 
