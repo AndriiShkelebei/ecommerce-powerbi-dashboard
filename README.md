@@ -15,6 +15,7 @@ The focus is on understanding why customer retention is low and how delivery per
    On-time delivery: ~4.2
    Delayed delivery: ~2.6
  Revenue grew rapidly in 2017 and stabilized in 2018 (~$1M/month)
+  Revenue grew rapidly in 2017 and stabilized in 2018 (~$1M/month)
 
 Conclusion: delivery delays are strongly associated with lower customer satisfaction and likely contribute to low retention.
 
