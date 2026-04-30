@@ -3,14 +3,10 @@
 -- Dataset: Olist E-commerce
 -- =========================================
 
--- Drop tables if they already exist
-DROP TABLE IF EXISTS analysis_table;
-DROP TABLE IF EXISTS category_analysis_table;
-
 -- =========================================
 -- MAIN ANALYSIS TABLE
 -- =========================================
-
+CREATE TABLE analysis_table AS
 WITH order_revenue AS (
     SELECT 
         order_id,
