@@ -124,7 +124,7 @@ ecommerce-powerbi-dashboard/
 
 ##  Dashboard Preview
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
 
 ---
 
