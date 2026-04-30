@@ -9,12 +9,12 @@ The focus is on understanding why customer retention is low and how delivery per
 
 ## Key Findings
 
-- Customer retention is very low (~3%)
-- Delayed deliveries account for ~8% of orders
-- Average review score:
-  - On-time delivery: ~4.2
-  - Delayed delivery: ~2.6
-- Revenue grew rapidly in 2017 and stabilized in 2018 (~$1M/month)
+ Customer retention is very low (~3%)
+ Delayed deliveries account for ~8% of orders
+ Average review score:
+   On-time delivery: ~4.2
+   Delayed delivery: ~2.6
+ Revenue grew rapidly in 2017 and stabilized in 2018 (~$1M/month)
 
 Conclusion: delivery delays are strongly associated with lower customer satisfaction and likely contribute to low retention.
 
@@ -24,13 +24,13 @@ Conclusion: delivery delays are strongly associated with lower customer satisfac
 
 The dashboard includes:
 
-- Revenue, Orders, Customers, AOV
-- Revenue trend over time
-- Revenue growth (selected period)
-- Delivery delay rate
-- Customer retention (new vs returning)
-- Review score by delivery status
-- Top product categories by revenue
+ Revenue, Orders, Customers, AOV
+ Revenue trend over time
+ Revenue growth (selected period)
+ Delivery delay rate
+ Customer retention (new vs returning)
+ Review score by delivery status
+ Top product categories by revenue
 
 ![Dashboard](screenshots/overview_dashboard.png)
 
@@ -51,22 +51,22 @@ Scope adjustments:
 
 SQL scripts are used to prepare and analyze the data:
 
-- `01_create_analysis_table.sql` — builds the main dataset
-- `02_business_analysis_queries.sql` — business metrics and analysis
+ `01_create_analysis_table.sql` — builds the main dataset
+ `02_business_analysis_queries.sql` — business metrics and analysis
 
 Key calculations:
-- Monthly revenue and growth
-- Retention rate
-- Delivery delay rate
-- Category revenue share
-- Review score analysis
+ Monthly revenue and growth
+ Retention rate
+ Delivery delay rate
+ Category revenue share
+ Review score analysis
 
 ---
 
 ## Tools
 
-- SQL (PostgreSQL)
-- Power BI
+ SQL (PostgreSQL)
+ Power BI
 
 ---
 
