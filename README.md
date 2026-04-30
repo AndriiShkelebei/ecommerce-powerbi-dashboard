@@ -71,15 +71,18 @@ Key calculations:
 ---
 
 ## Project Structure
-screenshots/
-overview_dashboard.png
-
-sql/
-01_create_analysis_table.sql
-02_business_analysis_queries.sql
-
-customer_retention_analysis.pbix
-README.md
+├──  screenshots/
+│   └── overview_dashboard.png
+│
+├──  sql/
+│   ├── 01_create_analysis_table.sql
+│   ├── 02_business_analysis_queries.sql
+│   └── README.md
+│
+├── 📊 customer_retention_analysis.pbix
+├── 📄 README.md
+├── 📄 LICENSE
+└── 📄 .gitignore
 
 ---
 
