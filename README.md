@@ -7,7 +7,7 @@ This project investigates why customer retention is low and whether delivery per
 
 ---
 
-## 📊 Data
+## Data
 
 Dataset: Brazilian E-Commerce Public Dataset by Olist (Kaggle)
  Period: Jan 2017 – Aug 2018
