@@ -1,148 +1,88 @@
-#  E-commerce Performance Dashboard (SQL + Power BI)
+# E-commerce Customer Retention & Delivery Impact
 
-##  Overview
+## Overview
+This project analyzes customer behavior, revenue trends, and delivery performance using the Olist Brazilian e-commerce dataset.
 
-This project analyzes a real-world e-commerce dataset (Olist) using **SQL and Power BI**.
-
-It simulates a real data analyst workflow:
-
- data extraction and transformation in SQL
- creation of an analysis-ready dataset
- development of an interactive dashboard for business insights
-
-This project complements a separate Excel-based analysis, demonstrating multiple approaches to the same dataset.
+The focus is on understanding why customer retention is low and how delivery performance affects customer satisfaction.
 
 ---
 
-##  Objectives
+## Key Findings
 
- Analyze overall business performance
- Track revenue trends over time
- Evaluate customer behavior
- Identify top-performing product categories
- Understand how delivery impacts customer satisfaction
+- Customer retention is very low (~3%)
+- Delayed deliveries account for ~8% of orders
+- Average review score:
+  - On-time delivery: ~4.2
+  - Delayed delivery: ~2.6
+- Revenue grew rapidly in 2017 and stabilized in 2018 (~$1M/month)
 
----
-
-##  Tools & Technologies
-
- **PostgreSQL** — data preparation
- **SQL (CTE, JOINs, aggregations)** — data transformation
- **Power BI** — data visualization and dashboarding
+Conclusion: delivery delays are strongly associated with lower customer satisfaction and likely contribute to low retention.
 
 ---
 
-##  Data Preparation (SQL)
+## Dashboard
 
-Two analytical tables were created:
+The dashboard includes:
 
-### `analysis_table`
-
-Main dataset used for KPIs and trend analysis:
-
- revenue (aggregated from order_items)
- payment_value
- review_score (average)
- delivery_status (On Time / Delayed)
- order_month
-
-### `category_analysis_table`
-
-Used for category-level analysis:
-
- revenue by product category
- supports Top 10 categories visualization
-
-Data was transformed using joins, aggregations, and CTEs to create a flat structure optimized for BI reporting.
-
----
-
-##  Dashboard Features
-
- **KPI Cards**
-
-   Total Revenue
-   Total Orders
-   Total Customers
-   Average Order Value (AOV)
-
- **Revenue Trend**
-
-   Monthly revenue growth
-
- **Customer Satisfaction**
-
-   Review score comparison:
-
-     On Time vs Delayed deliveries
-
- **Top 10 Categories**
-
-   Revenue distribution by category
-
- **Interactive Slicer**
-
-   Filter data by month
-
- **Custom Tooltip**
-
-   Displays additional metrics on hover (mini-dashboard experience)
-
----
-
-##  Key Insights
-
- Revenue shows consistent growth with peaks in late 2017
- A small number of categories generate the majority of revenue (Pareto effect)
- Delivery delays significantly reduce customer satisfaction
- Customer retention is very low — most users make only one purchase
-
----
-
-##  Recommendations
-
- Improve delivery performance to increase customer satisfaction
- Implement retention strategies (loyalty programs, remarketing)
- Focus on high-performing categories for growth
- Monitor underperforming sellers
-
----
-
-##  Project Structure
-
-```text id="e7l4ap"
-ecommerce-powerbi-dashboard/
-├── ecommerce_dashboard.pbix
-├── README.md
-├── screenshots/
-│   └── dashboard.png
-└── sql/
-    └── create_analysis_table.sql
-```
-
----
-
-##  Dashboard Preview
+- Revenue, Orders, Customers, AOV
+- Revenue trend over time
+- Revenue growth (selected period)
+- Delivery delay rate
+- Customer retention (new vs returning)
+- Review score by delivery status
+- Top product categories by revenue
 
 ![Dashboard](screenshots/dashboard.png)
 
 ---
 
-##  How to Use
+## Data
 
-1. Open `ecommerce_dashboard.pbix` in Power BI Desktop
-2. Connect to your PostgreSQL database (or use imported data)
-3. Interact with slicers, filters, and tooltips
+Dataset: Olist Brazilian E-commerce Dataset (Kaggle)
 
----
-
-##  Notes
-
-This project demonstrates a full analytics workflow: from SQL data modeling to interactive BI dashboard development.
+Scope adjustments:
+- Early low-volume months removed
+- Late incomplete months excluded  
+- Analysis period: Jan 2017 – Aug 2018
 
 ---
 
-##  Author
+## SQL
+
+SQL scripts are used to prepare and analyze the data:
+
+- `01_create_analysis_table.sql` — builds the main dataset
+- `02_business_analysis_queries.sql` — business metrics and analysis
+
+Key calculations:
+- Monthly revenue and growth
+- Retention rate
+- Delivery delay rate
+- Category revenue share
+- Review score analysis
+
+---
+
+## Tools
+
+- SQL (PostgreSQL)
+- Power BI
+
+---
+
+## Project Structure
+screenshots/
+overview_dashboard.png
+
+sql/
+01_create_analysis_table.sql
+02_business_analysis_queries.sql
+
+customer_retention_analysis.pbix
+README.md
+
+---
+
+## Author
 
 Andrii Shkelebei
-Aspiring Data Analyst focused on SQL, Power BI, and Business Intelligence
