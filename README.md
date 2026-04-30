@@ -32,7 +32,7 @@ The dashboard includes:
 - Review score by delivery status
 - Top product categories by revenue
 
-![Dashboard](screenshots/overview_1dashboard.png)
+![Dashboard](screenshots/overview_dashboard.png)
 
 ---
 
