@@ -130,6 +130,7 @@ SQL scripts used for data preparation and analysis:
 ├── sql/
 │ ├── 01_create_analysis_table.sql
 │ ├── 02_business_analysis_queries.sql
+│ ├── 03_retention_analysis.sql
 │ └── README.md
 ├── customer_retention_analysis.pbix
 ├── README.md
