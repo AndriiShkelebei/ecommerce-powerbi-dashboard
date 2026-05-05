@@ -3,7 +3,7 @@
 ## Problem
 
 E-commerce growth depends on both customer acquisition and retention.  
-This project investigates why customer retention is extremely low (~3%) and evaluates whether delivery performance is a key driver of customer satisfaction and repeat purchases.
+This project investigates why customer retention is extremely low (~3%) and evaluates whether delivery performance impacts customer satisfaction and repeat purchases.
 
 ---
 
@@ -39,51 +39,36 @@ Delivery performance has a strong impact on customer satisfaction. On-time order
 
 The business experienced rapid growth in 2017, followed by a plateau in 2018. At the same time, most high-revenue categories show low repeat purchase rates, typically between 1–3%.
 
-This indicates that the business relies primarily on new customers and one-time purchases rather than building a returning customer base.
-
-### Delivery Impact
- Delayed orders: **~2.6 avg rating**
- On-time orders: **~4.2 avg rating**
-
-→ Delivery strongly affects customer satisfaction  
-→ But does NOT explain low retention
-
-### Growth Pattern
- Rapid growth in 2017
- Plateau in 2018 (~6000–7000 customers/month)
-
-### Category Analysis
- Most high-revenue categories have **low repeat purchase rates (1–3%)**
- High-retention categories do not generate significant revenue
+Overall, the data suggests that the business relies primarily on new customers and one-time purchases rather than building a returning customer base.
 
 ---
 
 ## Key Finding
 
-Low retention is **not caused by delivery issues or tracking errors**.
+Low retention is not caused by delivery issues or tracking errors.
 
-It reflects real customer behavior and a business model heavily dependent on **one-time purchases and continuous acquisition of new customers**.
+It reflects real customer behavior and a business model heavily dependent on one-time purchases and continuous acquisition of new customers.
 
-This creates a **non-scalable growth model** — once new customer acquisition slows down, growth stagnates.
+This creates a non-scalable growth model — once new customer acquisition slows down, growth stagnates.
 
 ---
 
 ## Business Impact
 
- Heavy dependence on new customers increases marketing costs
- Low retention limits long-term revenue growth
- Growth becomes unstable and difficult to scale
- Customer experience issues (e.g. delivery delays) reduce satisfaction but are not the root cause
+- Heavy dependence on new customers increases marketing costs  
+- Low retention limits long-term revenue growth  
+- Growth becomes unstable and difficult to scale  
+- Delivery issues reduce satisfaction but are not the root cause  
 
 ---
 
 ## Recommendations
 
- Improve post-purchase engagement (email, promotions, loyalty programs)
- Increase cross-category exposure to encourage repeat purchases
- Focus on categories with higher repeat potential
- Continue improving delivery performance to maintain customer satisfaction
- Track retention as a core business KPI
+- Improve post-purchase engagement (email, promotions, loyalty programs)  
+- Increase cross-category exposure to encourage repeat purchases  
+- Focus on categories with higher repeat potential  
+- Continue improving delivery performance  
+- Track retention as a core business KPI  
 
 ---
 
@@ -92,12 +77,12 @@ This creates a **non-scalable growth model** — once new customer acquisition s
 ![Dashboard](screenshots/overview_dashboard.png)
 
 The dashboard includes:
- Revenue, Orders, Customers, AOV  
- Revenue trend & growth %  
- Returning customer rate  
- Delivery delay rate  
- Review score by delivery status  
- Category performance  
+- Revenue, Orders, Customers, AOV  
+- Revenue trend & growth %  
+- Returning customer rate  
+- Delivery delay rate  
+- Review score by delivery status  
+- Category performance  
 
 ---
 
@@ -105,14 +90,9 @@ The dashboard includes:
 
 SQL scripts used for data preparation and analysis:
 
- `01_create_analysis_table.sql`  
-  → builds the main analytical dataset  
-
- `02_business_analysis_queries.sql`  
-  → core business metrics (revenue, customers, delivery, reviews)  
-
- `03_retention_analysis.sql`  
-  → advanced retention and customer behavior analysis  
+- `01_create_analysis_table.sql` – builds the main analytical dataset  
+- `02_business_analysis_queries.sql` – core business metrics  
+- `03_retention_analysis.sql` – advanced retention and customer behavior analysis  
 
 ---
 
