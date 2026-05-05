@@ -24,22 +24,22 @@ Data adjustments:
 I approached this project as a real business case, starting from identifying the problem and testing multiple hypotheses.
 
 Steps:
- Built analytical dataset using SQL (JOINs, CTEs, aggregations)
- Calculated core business KPIs:
-  - Revenue & Monthly Growth %
-  - Average Order Value (AOV)
-  - Returning Customer Rate
-  - Delivery Delay Rate
-  - Review Score distribution
- Segmented customers (new vs returning)
- Analyzed delivery impact on customer satisfaction
- Performed deeper retention analysis:
-  - Orders per customer distribution
-  - Revenue contribution by returning customers
-  - Retention by product category
-  - Cross-category purchase behavior
-  - Data validation (customer tracking consistency)
- Built an interactive Power BI dashboard
+Built analytical dataset using SQL (JOINs, CTEs, aggregations)
+Calculated core business KPIs:
+Revenue & Monthly Growth %
+Average Order Value (AOV)
+Returning Customer Rate
+Delivery Delay Rate
+Review Score distribution
+Segmented customers (new vs returning)
+Analyzed delivery impact on customer satisfaction
+Performed deeper retention analysis:
+Orders per customer distribution
+Revenue contribution by returning customers
+Retention by product category
+Cross-category purchase behavior
+Data validation (customer tracking consistency)
+Built an interactive Power BI dashboard
 
 ---
 
