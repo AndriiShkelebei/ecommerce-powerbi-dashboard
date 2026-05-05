@@ -23,31 +23,23 @@ Data adjustments:
 
 I approached this project as a real business case, starting from identifying the problem and testing multiple hypotheses.
 
-Steps:
-Built analytical dataset using SQL (JOINs, CTEs, aggregations)
-Calculated core business KPIs:
-Revenue & Monthly Growth %
-Average Order Value (AOV)
-Returning Customer Rate
-Delivery Delay Rate
-Review Score distribution
-Segmented customers (new vs returning)
-Analyzed delivery impact on customer satisfaction
-Performed deeper retention analysis:
-Orders per customer distribution
-Revenue contribution by returning customers
-Retention by product category
-Cross-category purchase behavior
-Data validation (customer tracking consistency)
-Built an interactive Power BI dashboard
+I built an analytical dataset in SQL using JOINs, CTEs, and aggregations, and calculated key business metrics such as revenue growth, average order value, returning customer rate, delivery delay rate, and review score distribution.
+
+I then segmented customers into new and returning, analyzed the impact of delivery on customer satisfaction, and performed deeper retention analysis, including orders per customer distribution, revenue contribution of returning users, retention by category, and cross-category behavior.
+
+To ensure reliability, I also validated customer tracking consistency. All results were visualized in an interactive Power BI dashboard.
 
 ---
 
 ## Key Insights
 
- **Customer retention is extremely low (~3%)**
- **~97% of customers make only one purchase**
- **Returning customers generate only ~5.8% of revenue**
+Customer retention is extremely low at around 3%, with approximately 97% of customers making only one purchase. Returning users contribute only about 5.8% of total revenue.
+
+Delivery performance has a strong impact on customer satisfaction. On-time orders have an average rating of 4.2, while delayed orders drop to 2.6. However, delivery does not explain low retention.
+
+The business experienced rapid growth in 2017, followed by a plateau in 2018. At the same time, most high-revenue categories show low repeat purchase rates, typically between 1–3%.
+
+This indicates that the business relies primarily on new customers and one-time purchases rather than building a returning customer base.
 
 ### Delivery Impact
  Delayed orders: **~2.6 avg rating**
