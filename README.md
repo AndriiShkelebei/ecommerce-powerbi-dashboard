@@ -55,20 +55,28 @@ This creates a non-scalable growth model — once new customer acquisition slows
 
 ## Business Impact
 
-- Heavy dependence on new customers increases marketing costs  
-- Low retention limits long-term revenue growth  
-- Growth becomes unstable and difficult to scale  
-- Delivery issues reduce satisfaction but are not the root cause  
+Heavy dependence on new customers increases marketing costs  
+
+Low retention limits long-term revenue growth  
+
+Growth becomes unstable and difficult to scale  
+
+Delivery issues reduce satisfaction but are not the root cause  
+
 
 ---
 
 ## Recommendations
 
-- Improve post-purchase engagement (email, promotions, loyalty programs)  
-- Increase cross-category exposure to encourage repeat purchases  
-- Focus on categories with higher repeat potential  
-- Continue improving delivery performance  
-- Track retention as a core business KPI  
+Improve post-purchase engagement (email, promotions, loyalty programs)  
+
+Increase cross-category exposure to encourage repeat purchases  
+
+Focus on categories with higher repeat potential  
+
+Continue improving delivery performance  
+
+Track retention as a core business KPI  
 
 ---
 
@@ -90,9 +98,9 @@ The dashboard includes:
 
 SQL scripts used for data preparation and analysis:
 
-- `01_create_analysis_table.sql` – builds the main analytical dataset  
-- `02_business_analysis_queries.sql` – core business metrics  
-- `03_retention_analysis.sql` – advanced retention and customer behavior analysis  
+`01_create_analysis_table.sql` – builds the main analytical dataset  
+`02_business_analysis_queries.sql` – core business metrics  
+`03_retention_analysis.sql` – advanced retention and customer behavior analysis  
 
 ---
 
