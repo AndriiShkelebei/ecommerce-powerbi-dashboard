@@ -78,13 +78,9 @@ The SQL folder contains the main scripts used in the project.
 ├── LICENSE
 └── .gitignore
 ```
-Conclusion
+## Conclusion
 
-The main problem I found in this dataset is very low customer retention. Most customers bought only once, and returning customers generated only a small share of total revenue.
-
-Delivery delays also had a strong negative effect on customer satisfaction, because delayed orders received much lower review scores. However, delivery delays are probably not the only reason for low retention.
-
-From a business point of view, the company should track retention more carefully, improve post-purchase communication, and test ways to encourage repeat purchases, especially in categories where customers are more likely to buy again.
+The main problem I found in this dataset is very low customer retention. Most customers bought only once, and returning customers generated only a small share of total revenue. Delivery delays also had a strong negative effect on customer satisfaction, because delayed orders received much lower review scores. However, delivery delays are probably not the only reason for low retention. From a business point of view, the company should track retention more carefully, improve post-purchase communication, and test ways to encourage repeat purchases, especially in categories where customers are more likely to buy again.
 ---
 
 ## 👤 Author
