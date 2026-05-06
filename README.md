@@ -2,157 +2,69 @@
 
 ## About the project
 
-This is a data analytics project based on the Brazilian E-Commerce Public Dataset by Olist.
+This is my data analytics project based on the Brazilian E-Commerce Public Dataset by Olist.
 
-I worked with this dataset to understand customer behavior, revenue trends, delivery performance, and customer reviews. During the analysis, I noticed that customer retention is very low, so I focused more on repeat purchases and possible reasons why customers do not come back.
+I chose this dataset because it contains real e-commerce data: orders, customers, payments, delivery information, products, and reviews. At first, I wanted to analyze general business performance, but during the work I noticed that customer retention was very low. Because of that, I focused more on repeat purchases, delivery performance, and customer satisfaction.
 
 The project includes SQL analysis and a Power BI dashboard.
 
----
-
 ## Dataset
 
-Dataset: Brazilian E-Commerce Public Dataset by Olist  
-Source: Kaggle  
-Period: January 2017 – August 2018  
-Size: around 100,000 orders
+The dataset was taken from Kaggle: Brazilian E-Commerce Public Dataset by Olist. It contains around 100,000 orders and covers the period from January 2017 to August 2018.
 
-The dataset includes information about:
+For the analysis, I used order, customer, payment, delivery, product, and review data. I also removed early low-volume months and incomplete late months, because they could distort revenue trends and growth calculations.
 
-- orders
-- customers
-- payments
-- products
-- delivery dates
-- reviews
+## Questions I wanted to answer
 
-I excluded early low-volume months and incomplete late months to make the analysis more stable.
+In this project, I wanted to understand how the business performs over time and why customers rarely come back after the first purchase.
 
----
-
-## Main questions
-
-In this project, I tried to answer these questions:
-
-- How much revenue does the business generate over time?
-- What is the customer retention rate?
-- How many customers buy more than once?
-- How many orders are delivered late?
-- How do delivery delays affect customer reviews?
-- Which product categories generate the most revenue?
-- Are delivery problems the main reason for low retention?
-
----
+The main questions were: what is the customer retention rate, how many customers buy more than once, how much revenue comes from returning customers, how delivery delays affect review scores, and which product categories generate the most revenue.
 
 ## Tools
 
-- SQL PostgreSQL
-- Power BI
-- GitHub
-
----
+I used SQL PostgreSQL for data preparation and analysis. Power BI was used for building the dashboard and visualizing the main KPIs. GitHub was used to store and present the project.
 
 ## What I did
 
-First, I prepared the data in SQL. I joined several tables, aggregated revenue and payments by order, added review scores, and created delivery status based on estimated and actual delivery dates.
+First, I prepared the data in SQL. I joined several tables from the dataset and created an analytical table for further analysis. I aggregated revenue and payments by order, added customer information, review scores, and delivery dates.
 
-Then I calculated the main business metrics:
+I also created a delivery status column. If the actual delivery date was later than the estimated delivery date, the order was marked as delayed. This helped me compare customer reviews for on-time and delayed deliveries.
 
-- revenue
-- number of orders
-- number of customers
-- average order value
-- monthly revenue growth
-- returning customer rate
-- delivery delay rate
-- average review score
+After preparing the data, I calculated the main business metrics: revenue, number of orders, number of customers, average order value, monthly revenue growth, returning customer rate, delivery delay rate, and average review score.
 
-After that, I analyzed customer retention more deeply. I checked how many customers made repeat purchases, how much revenue returning customers generated, and whether delayed delivery could explain low retention.
+Then I analyzed customer retention more deeply. I checked how many customers made more than one purchase, how much revenue returning customers generated, and whether delivery delays could explain the low retention rate.
 
-Finally, I created a Power BI dashboard to show the main results visually.
-
----
+Finally, I created a Power BI dashboard to show the main results in a clear visual format.
 
 ## Key findings
 
-### Customer retention is very low
+Customer retention was very low. Only around 3% of customers made more than one purchase. This means that most customers bought only once, and the business depends mainly on attracting new customers.
 
-Only around 3% of customers made more than one purchase.
+Returning customers also generated only a small part of total revenue — around 5.8%. This confirms that repeat purchases did not have a strong impact on overall revenue in this dataset.
 
-This means that most customers bought only once. Because of this, the business depends mostly on new customers.
+Delivery delays had a clear negative effect on customer reviews. On-time orders had an average review score of around 4.2, while delayed orders had an average score of around 2.6. This shows that delivery performance is strongly connected with customer satisfaction.
 
-### Returning customers generate a small part of revenue
+However, delivery delays do not fully explain the low retention rate. The retention problem seems to be broader. It may be connected with customer behavior, product categories, and the fact that many purchases in this dataset are one-time purchases.
 
-Returning customers generated only around 5.8% of total revenue.
-
-This confirms that repeat purchases do not have a big impact on total revenue in this dataset.
-
-### Delivery delays affect reviews
-
-Delayed delivery has a clear negative impact on customer reviews.
-
-Average review score:
-
-- On-time delivery: around 4.2
-- Delayed delivery: around 2.6
-
-So customers who received their orders late were much less satisfied.
-
-### Delivery is not the only reason for low retention
-
-Even though delayed delivery lowers customer satisfaction, it does not fully explain why retention is so low.
-
-The problem seems to be broader. It may be connected with customer behavior, product categories, and the fact that many purchases in this dataset are one-time purchases.
-
-### Revenue growth slowed down
-
-Revenue grew strongly during 2017, but in 2018 it became more stable at around $1M per month.
-
-This may mean that further growth is harder when the business mostly relies on attracting new customers instead of repeat buyers.
-
----
+Revenue grew strongly during 2017, but in 2018 it became more stable at around $1M per month. This may mean that further growth becomes harder when the business mostly relies on new customers instead of repeat buyers.
 
 ## Dashboard
 
-The dashboard shows:
-
-- revenue
-- orders
-- customers
-- average order value
-- revenue trend
-- monthly revenue growth
-- returning customer rate
-- delivery delay rate
-- review score by delivery status
-- top product categories by revenue
+The Power BI dashboard includes the main KPIs and visualizations: revenue, orders, customers, average order value, revenue trend, monthly revenue growth, returning customer rate, delivery delay rate, review score by delivery status, and top product categories by revenue.
 
 ![Dashboard](screenshots/overview_dashboard.png)
 
----
-
 ## SQL files
 
-The SQL folder contains scripts used for data preparation and analysis:
+The SQL folder contains the main scripts used in the project.
 
-- `01_create_analysis_table.sql` — creates the main analysis table
-- `02_business_analysis_queries.sql` — calculates business metrics
-- `03_retention_analysis.sql` — analyzes customer retention in more detail
+`01_create_analysis_table.sql` creates the main analytical table for the dashboard and analysis.
 
-The SQL analysis includes:
+`02_business_analysis_queries.sql` includes SQL queries for business metrics such as revenue growth, customer retention, delivery delay rate, review score analysis, and product category performance.
 
-- joining tables
-- creating aggregated tables
-- calculating revenue
-- calculating monthly growth
-- calculating retention rate
-- analyzing delivery delays
-- comparing review scores
-- analyzing product categories
+`03_retention_analysis.sql` includes deeper analysis of customer retention, returning customers, and revenue contribution from repeat purchases.
 
----
-
-## Project Structure
+## Project structure
 ```
 ├── screenshots/
 │ └── overview_dashboard.png
