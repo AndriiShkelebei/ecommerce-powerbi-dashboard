@@ -19,18 +19,26 @@ WITH monthly_revenue AS (
     WHERE DATE_TRUNC('month', o.order_purchase_timestamp) 
           BETWEEN '2017-01-01' AND '2018-08-01'
     GROUP BY month
+),
+
+revenue_with_previous AS (
+    SELECT
+        month,
+        revenue,
+        LAG(revenue) OVER (ORDER BY month) AS previous_month_revenue
+    FROM monthly_revenue
 )
 
 SELECT
     month,
     revenue,
-    LAG(revenue) OVER (ORDER BY month) AS previous_month_revenue,
+    previous_month_revenue,
     ROUND(
-        100.0 * (revenue - LAG(revenue) OVER (ORDER BY month)) 
-        / LAG(revenue) OVER (ORDER BY month),
+        100.0 * (revenue - previous_month_revenue) 
+        / previous_month_revenue,
         2
     ) AS revenue_growth_percent
-FROM monthly_revenue
+FROM revenue_with_previous
 ORDER BY month;
 
 
